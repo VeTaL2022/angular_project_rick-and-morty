@@ -1,0 +1,11 @@
+div{
+  background-color: royalblue;
+  color: snow;
+  padding: 5px;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  margin: 0 5px;
+  color: snow;
+}

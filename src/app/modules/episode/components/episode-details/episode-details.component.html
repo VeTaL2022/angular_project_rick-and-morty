@@ -1,0 +1,8 @@
+<div class="main">
+  <p>
+    <span><b>{{selectedEpisode.name}}</b></span> <br>
+    <b>Episode:</b> {{selectedEpisode.episode}} <br>
+    <b>air_date:</b> {{selectedEpisode.air_date}}
+  </p>
+</div>
+<p *ngIf="selectedEpisode">{{selectedEpisode|json}}</p>

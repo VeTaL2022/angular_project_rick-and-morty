@@ -1,0 +1,13 @@
+h3{
+  text-align: center;
+  background-color: darkgray;
+  padding: 10px;
+}
+.episodes{
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
