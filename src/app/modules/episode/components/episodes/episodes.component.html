@@ -1,4 +1,12 @@
 <h3>Rick and Morty episodes!</h3>
+
+<mat-paginator [length]="count"
+               [pageSize]="20"
+               style="background-color: #acecec">
+</mat-paginator>
+
 <div class="episodes">
   <app-episode *ngFor="let episode of episodes" [episode]="episode"></app-episode>
 </div>
+
+

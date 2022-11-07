@@ -1,7 +1,18 @@
-.main{
+.header {
   text-align: center;
-  background-color: #c9c4c4;
+  background-color: #dad4d4;
 }
-.main span{
+
+.main span {
   font-size: x-large;
+}
+
+.flex {
+  margin: auto;
+  width: 62%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }

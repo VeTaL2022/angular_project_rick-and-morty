@@ -1,11 +1,28 @@
-div{
-  background-color: royalblue;
-  color: snow;
-  padding: 5px;
+.header {
   margin: 0;
+  padding: 5px;
+
+  color: snow;
+  background-color: royalblue;
+  font-family: Fantasy, cursive;
 }
-a{
-  text-decoration: none;
+
+.header > a {
+  font-size: x-large;
+}
+
+.children {
+  width: 20%;
+  text-align: center;
+  font-size: large;
+}
+
+a {
   margin: 0 5px;
   color: snow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lawngreen;
 }

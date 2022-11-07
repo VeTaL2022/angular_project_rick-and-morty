@@ -1,8 +1,11 @@
-<div class="main">
+<div class="header" *ngIf="selectedEpisode">
   <p>
     <span><b>{{selectedEpisode.name}}</b></span> <br>
-    <b>Episode:</b> {{selectedEpisode.episode}} <br>
+    <b>episode:</b> {{selectedEpisode.episode}} <br>
     <b>air_date:</b> {{selectedEpisode.air_date}}
   </p>
 </div>
-<p *ngIf="selectedEpisode">{{selectedEpisode|json}}</p>
+
+<div class="flex" *ngIf="selectedEpisode">
+  <app-episode-characters *ngFor="let char of selectedEpisode.characters" [url]="char"></app-episode-characters>
+</div>

@@ -1,0 +1,22 @@
+.char {
+  margin: 10px;
+  width: 218px;
+  height: 430px;
+
+  background-color: lavender;
+}
+
+img {
+  width: 250px;
+}
+
+.header {
+  font-family: Fantasy, cursive;
+}
+
+.footer {
+  padding: 2px 0;
+
+  text-align: center;
+  font-family: "Baskerville Old Face", cursive;
+}

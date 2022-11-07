@@ -14,7 +14,7 @@ export class EpisodeService {
   }
 
   getAll(page: number = 1): Observable<IPaginatedData<IEpisode>> {
-    return this.httpClient.get<IPaginatedData<IEpisode>>(urls.episode);
+    return this.httpClient.get<IPaginatedData<IEpisode>>(urls.episode, {params: {page}});
   }
 
   getById(id: number): Observable<IEpisode> {

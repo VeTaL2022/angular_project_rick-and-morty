@@ -3,9 +3,15 @@ import {RouterModule, Routes} from '@angular/router';
 
 import {EpisodesComponent} from "./components/episodes/episodes.component";
 import {EpisodeDetailsComponent} from "./components/episode-details/episode-details.component";
+import {EpisodeResolver} from "./services/resolvers/episode.resolver";
 
 const routes: Routes = [
-  {path: '', component: EpisodesComponent},
+  {
+    path: '',
+    component: EpisodesComponent,
+    runGuardsAndResolvers: 'paramsOrQueryParamsChange',
+    resolve: {data: EpisodeResolver}
+  },
   {path: ':id', component: EpisodeDetailsComponent}
 ];
 

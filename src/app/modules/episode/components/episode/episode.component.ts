@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 import {IEpisode} from "../../interfaces";
-import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-episode',

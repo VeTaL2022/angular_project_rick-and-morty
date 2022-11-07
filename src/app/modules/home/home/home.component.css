@@ -1,0 +1,28 @@
+.home {
+  margin: auto;
+  width: 67%;
+  height: 110vh;
+
+  background-image: url("https://shop-cdn1.vigbo.tech/shops/126035//products/21471596/images/2-c538a180704560dd29567f695f48c16c.jpg");
+  border-radius: 40px;
+  font-family: cursive;
+}
+
+p {
+  margin: auto;
+  width: 60%;
+}
+
+div > h2, a {
+  color: darkslategray;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+img {
+  width: 350px;
+}

@@ -5,6 +5,7 @@ import {
   ActivatedRouteSnapshot
 } from '@angular/router';
 import {Observable} from 'rxjs';
+
 import {IEpisode, IPaginatedData} from "../../interfaces";
 import {EpisodeService} from "../episode.service";
 
