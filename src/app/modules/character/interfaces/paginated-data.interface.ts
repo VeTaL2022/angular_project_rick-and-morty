@@ -1,3 +1,6 @@
 export interface IPaginatedData<Data> {
-  results: Data[]
+  info: {
+    count: number;
+  }
+  results: Data[];
 }

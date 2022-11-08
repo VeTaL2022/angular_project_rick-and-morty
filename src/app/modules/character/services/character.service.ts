@@ -13,8 +13,8 @@ export class CharacterService {
   constructor(private httpClient: HttpClient) {
   }
 
-  getAll(): Observable<IPaginatedData<ICharacter>> {
-    return this.httpClient.get<IPaginatedData<ICharacter>>(urls.character);
+  getAll(page: number = 1): Observable<IPaginatedData<ICharacter>> {
+    return this.httpClient.get<IPaginatedData<ICharacter>>(urls.character, {params: {page}});
   }
 
   getById(id: number): Observable<ICharacter> {

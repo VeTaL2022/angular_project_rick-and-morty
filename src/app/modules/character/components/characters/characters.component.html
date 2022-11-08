@@ -1,4 +1,10 @@
-<h3>Rick and Morty characters</h3>
-<div>
+<h3>Rick and Morty characters!</h3>
+
+<mat-paginator
+  [length]="count"
+  pageSize="20">
+</mat-paginator>
+
+<div class="characters">
   <app-character *ngFor="let character of characters" [character]="character"></app-character>
 </div>
